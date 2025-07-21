@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大可乐个人空间站</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #f5f5f5;
+            padding: 50px;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .btn {
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #ff5252;
+            transform: scale(1.05);
+        }
+        .hidden {
+            display: none;
+        }
+        .message {
+            margin: 20px 0;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .thanks {
+            color: #ff6b6b;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+            animation: fadeIn 0.5s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="message">
+            你好，这里是大可乐个人空间站，扣1为她助力后续内容制作
+        </div>
+        
+        <button id="showBtn" class="btn" onclick="showNumberBtn()">点击这里扣1</button>
+        
+        <div id="numberBtnContainer" class="hidden">
+            <button id="numberBtn" class="btn" onclick="showThanks()">1</button>
+        </div>
+        
+        <div id="thanksMsg" class="hidden thanks">
+            感谢助力，主包在努力制作了
+        </div>
+    </div>
+
+    <script>
+        function showNumberBtn() {
+            document.getElementById('showBtn').classList.add('hidden');
+            document.getElementById('numberBtnContainer').classList.remove('hidden');
+        }
+        
+        function showThanks() {
+            document.getElementById('numberBtnContainer').classList.add('hidden');
+            document.getElementById('thanksMsg').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
