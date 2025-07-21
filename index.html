@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大可乐的创作空间</title>
+    <meta name="description" content="欢迎来到大可乐的个人创作空间">
+    <style>
+        :root {
+            --primary-color: #ff6b6b;
+            --secondary-color: #ff5252;
+        }
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+        }
+        .container {
+            max-width: 650px;
+            margin: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+        }
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 30px;
+        }
+        .btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 18px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(255, 107, 107, 0.3);
+        }
+        .btn:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(255, 107, 107, 0.4);
+        }
+        .hidden {
+            display: none;
+        }
+        .message {
+            margin: 20px 0;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+        .thanks {
+            color: var(--secondary-color);
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 30px;
+            animation: fadeIn 0.5s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>大可乐个人空间站</h1>
+        
+        <div class="message">
+            你好，欢迎来到我的创作空间！<br>
+            喜欢我的内容可以扣1为我助力后续创作哦~
+        </div>
+        
+        <button id="showBtn" class="btn" onclick="showNumberBtn()">点击这里扣1</button>
+        
+        <div id="numberBtnContainer" class="hidden">
+            <button id="numberBtn" class="btn" onclick="showThanks()">1</button>
+        </div>
+        
+        <div id="thanksMsg" class="hidden thanks">
+            感谢您的助力！主包正在努力制作更优质的内容~
+        </div>
+        
+        <div class="footer">
+            © 2023 大可乐的个人空间 - 持续更新中
+        </div>
+    </div>
+
+    <script>
+        function showNumberBtn() {
+            document.getElementById('showBtn').style.display = 'none';
+            document.getElementById('numberBtnContainer').style.display = 'block';
+        }
+        
+        function showThanks() {
+            document.getElementById('numberBtnContainer').style.display = 'none';
+            const thanksMsg = document.getElementById('thanksMsg');
+            thanksMsg.style.display = 'block';
+            
+            // 3秒后重新显示初始按钮
+            setTimeout(() => {
+                thanksMsg.style.display = 'none';
+                document.getElementById('showBtn').style.display = 'inline-block';
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
