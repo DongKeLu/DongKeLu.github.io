@@ -29,7 +29,7 @@ sections:
       avatar:
         size: large # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
         shape: rounded # Options: circle (default), square, rounded
-  - block: experience
+  - block: Internship
     content:
       username: admin
     design:
@@ -37,13 +37,13 @@ sections:
       date_format: 'January 2006'
       # Education or Experience section first?
       is_education_first: false
+  - block: Projects
+    content:
+      title: Projects
+      username: admin
   - block: skills
     content:
       title: Skills & Hobbies
-      username: admin
-  - block: awards
-    content:
-      title: Awards
       username: admin
   - block: languages
     content:

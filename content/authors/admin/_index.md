@@ -1,13 +1,13 @@
 ---
 # Display name
-title: 吳健雄
+title: 董珂璐
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+name_pronunciation: Kelu Dong
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
+first_name: Kelu
+last_name: Dong
 
 # Pronouns (optional)
 pronouns: she/her
@@ -20,83 +20,55 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Director of Cloud Infrastructure
+role: Tianjin University
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: GenCoin
-    url: https://www.example.com/
+  - name: Finance
+    url: https://www.tju.edu.cn/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:your-email@example.com'
+    url: 'mailto:13363030277@163.com'
     label: E-mail Me
   - icon: brands/x
-    url: https://x.com/BuildLore
   - icon: brands/github
-    url: https://github.com/gcushen
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/
-  - icon: brands/instagram
-    url: https://www.instagram.com/
+    url: https://github.com/DongKeLu
 
-education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+education：
+  - area: Finance
+    institution: Tianjin University
+    date_start: 2022-09-01
+    date_end: 2026-07-01
     summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.8/4.0
-
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.4/4.0
-
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
+      GPA: 3.6/4.0
+      Relevant Courses:
+      - Advanced Mathematics: 95
+      - C++: 91
+      - Database: 93
+      - Linear Algebra: 95
+      - Probability Theory: 92
+      - Applied Statistics: 98
+Internship:
+  - position: Fixed Income Intern
+    company_name: Xingye Securities
     company_url: ''
     company_logo: ''
-    date_start: 2021-01-01
-    date_end: ''
+    date_start: 2024-01-01
+    date_end: 2024-09-01
     summary: |2-
       Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
-    company_name: X
-    company_url: ''
-    company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - Utilized Wind and Tonghuashun platforms to construct and maintain a 
+      securities database, ensuring daily updates and data integrity.
+      - Collected and analyzed data to support the team's weekly assessment 
+      of various securities markets.
+      - Authored six in-depth industry research reports on regional economic 
+      performance, earning high praise from senior management.
+      - Assisted in conducting comprehensive company background research and 
+      summarized detailed meeting minutes with senior executives from Xiamen 
+      International Trade Group.
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
@@ -105,15 +77,15 @@ skills:
     items:
       - name: Python
         description: ''
-        percent: 80
-        icon: devicon/python
-      - name: RStudio
-        description: ''
         percent: 100
-        icon: devicon/rstudio
+        icon: devicon/python
+      - name: mysql
+        description: ''
+        percent: 85
+        icon: devicon/mysql
       - name: PyTorch
         description: ''
-        percent: 40
+        percent: 100
         icon: devicon/pytorch
   - name: Hobbies
     color: '#eeac02'
@@ -134,42 +106,35 @@ skills:
 
 languages:
   - name: English
-    percent: 100
+    percent: 85
   - name: Chinese
-    percent: 75
-  - name: Portuguese
-    percent: 25
+    percent: 100
+
 
 # Awards.
 #   Add/remove as many awards below as you like.
 #   Only `title`, `awarder`, and `date` are required.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
-awards:
-  - title: Neural Networks and Deep Learning
+Projects:
+  - title: Bayesian Neural Network (BNN) for Macroeconomic Variable Prediction
     url: https://www.coursera.org/learn/neural-networks-deep-learning
-    date: '2023-11-25'
-    awarder: Coursera
-    icon: brands/coursera
+    date: '2024-11-25'
+    awarder: Prof. Wan
+    icon: brands/Prof. Wan
     summary: |
-      I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
-  - title: Blockchain Fundamentals
+      - Developed and trained a three-layer Bayesian Neural Network (BNN) to forecast key macroeconomic variables, including employment, CPI, and industrial production.
+      - Employed the Pyro framework and NUTS sampler to estimate the posterior distribution of model parameters, effectively handling small sample datasets and quantifying prediction uncertainty.
+      - The model architecture, comprising an input layer, two hidden layers with sigmoid activation, and an output layer, demonstrated superior predictive performance, offering a novel solution for macroeconomic forecasting.
+  - title: Robust Spatiotemporal Graph Neural Network (STGNN) for GDP Prediction
     url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-    date: '2023-07-01'
-    awarder: edX
-    icon: brands/edx
+    date: '2025-05-01'
+    awarder: Prof. Wan
+    icon: brands/Prof. Wan
     summary: |
-      Learned:
-      - Synthesize your own blockchain solutions
-      - Gain an in-depth understanding of the specific mechanics of Bitcoin
-      - Understand Bitcoin’s real-life applications and learn how to attack and destroy Bitcoin, Ethereum, smart contracts and Dapps, and alternatives to Bitcoin’s Proof-of-Work consensus algorithm
-  - title: 'Object-Oriented Programming in R'
-    url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
-    certificate_url: https://www.datacamp.com
-    date: '2023-01-21'
-    awarder: datacamp
-    icon: brands/datacamp
-    summary: |
-      Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
+      - Created a GDP prediction model based on Spatiotemporal Graph Neural Networks (STGNN) to process dynamic trade data.
+      - Designed a robust STGNN architecture capable of handling noisy and incomplete data while capturing complex spatiotemporal relationships.
+      - Utilized a graph structure with 6-dimensional node features and 22-dimensional directed edge features to ensure model robustness and performance.
+      - Modeled international trade relationships through graph structures and trained the model with multi-time-step data to achieve precise GDP predictions, providing a powerful tool for macroeconomic analysis.
 ---
 
-I am currently Director of Cloud Infrastructure at GenCoin where I am leading teams on edge computing, deep sea data center architecture, and hivemind optimization.
+Hello! I'm Dong Kelu, a student at Tianjin University, where my journey into the fascinating intersection of deep learning and macroeconomics unfolds. I'm passionate about exploring how cutting-edge AI technologies can illuminate the complexities of economic trends and drive innovative solutions. I'm excited about the prospect of diving into a career in AI, eager to contribute to and witness the transformative impact of this dynamic field in shaping our future.
