@@ -37,7 +37,7 @@ profiles:
   - icon: brands/github
     url: https://github.com/DongKeLu
 
-education：
+education:
   - area: Finance
     institution: Tianjin University
     date_start: 2022-09-01
